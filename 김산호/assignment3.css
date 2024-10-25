@@ -1,0 +1,144 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #585858;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  position: absolute;
+  top: 0;
+  height: 68px;
+  width: 100vw;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.header span {
+  margin-right: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 68px);
+  margin-top: 68px; 
+}
+.sign-in-modal{
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  display: block; 
+  border: 1px solid #dee2e6;
+}
+.header-logo{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.header-logo img{
+  width: 400px;
+  height: 180px;
+}
+hr {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  margin: 0;
+  width: 400px;
+  height: 1px;
+  background-color: #bfc4c7;
+  border: none;
+}
+.sign-in-modal-form {
+  display: block; 
+  margin-top: 20px;
+}
+.form-input-block {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-with-item {
+  width: 312px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 0px;
+  height: 38px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.sign-in-input {
+  padding: 0;
+  width: 100vw;
+  line-height: 1.47;
+  font-size: 15px;
+  border: 0;
+  background: none;
+  font-weight: bold;
+}
+.error-wrapper {
+  width: 312px;
+  height: 80px;
+  max-height: 80px;
+  overflow-y: auto;
+  color: red;
+  font-size: 12px;
+}
+.button-wrapper {
+  width: 312px;
+  display: flex;
+  justify-content: center;
+}
+.signup-button {
+  border-color: #03c75a;
+  font-weight: 700;
+  background-color: #03c75a;
+  margin: 5px 25px 0 0;
+  width: 180px;
+  height: 48px;
+  border: 1px solid;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 1.43;
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.close-button {
+  border-color: #dd0e0e;
+  font-weight: 700;
+  background-color: #dd0e0e;
+  margin: 5px 0 0 0;
+  width: 100px;
+  height: 48px;
+  border: 1px solid;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 1.43;
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}

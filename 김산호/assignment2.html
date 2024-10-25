@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment2</title>
+  <link rel="stylesheet" href="assignment2.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+  <div class="sign-in-modal">
+    <span class="header-logo">
+      <img src="image/logo.jpeg" alt="Logo">
+    </span>
+    <form class="sign-in-modal-form" onsubmit="return checkForm()">
+      <div class="form-checkbox-block">
+        <div class="checkbox-with-item">
+          <label>
+            <input type="checkbox" id="check1" onchange="toggle()">
+            <span>[필수]</span>가입약관
+          </label>
+          <div class="checkbox-text">
+            GDG서비스를 이용하시거나 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하게 되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기 바랍니다.
+          </div>
+        </div>
+        <div class="checkbox-with-item">
+          <label>
+            <input type="checkbox" id="check2" onchange="toggle()">
+            <span>[필수]</span>가입약관
+          </label>
+          <div class="checkbox-text">
+            실명 인증된 아이디로 가입, 위치기반서비스 이용약관, 이벤트·혜택 정보 수신 동의를 포함합니다.
+          </div>
+        </div>
+        <button class="ac-button" id="btn" disabled>
+          로그인
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function toggle() {
+      const $check1 = document.getElementById('check1').checked;
+      const $check2 = document.getElementById('check2').checked;
+      const $button = document.getElementById('btn')
+
+      $button.disabled = !($check1 && $check2); //checkbox 둘 다 체크 되었다면 활성화
+    }
+
+    function checkForm() {
+      window.location.href = "success.html";
+      return false;
+    }
+  </script>
+</body>
+</html>

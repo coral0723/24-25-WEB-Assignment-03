@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #585858;
+}
+* {
+  box-sizing: border-box;
+}
+.sign-in-modal{
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  display: block; 
+  border: 1px solid #dee2e6;
+}
+.header-logo{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.header-logo img{
+  width: 400px;
+  height: 180px;
+}
+hr {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  margin: 0;
+  width: 400px;
+  height: 1px;
+  background-color: #bfc4c7;
+  border: none;
+}
+.sign-in-modal-form {
+  display: block; 
+  margin-top: 30px;
+}
+.form-input-block {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-with-item {
+  width: 312px;
+  margin-top: 0;
+  display: flex;
+  padding: 10px 0px;
+  height: 48px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.sign-in-input {
+  padding: 0;
+  width: 100vw;
+  line-height: 1.47;
+  font-size: 15px;
+  border: 0;
+  background: none;
+  font-weight: bold;
+}
+.material-symbols-outlined {
+  width: 40.4px;
+  height: 30px;
+}
+.ac-button {
+  border-color: #03c75a;
+  font-weight: 700;
+  background-color: #03c75a;
+  margin: 60px 0 12px 0;
+  width: 312px;
+  height: 48px;
+  border: 1px solid;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 1.43;
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}

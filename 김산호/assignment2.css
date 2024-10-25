@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #585858;
+}
+* {
+  box-sizing: border-box;
+}
+.sign-in-modal{
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  background-color: #585858;;
+  display: block; 
+  border: 1px solid #dee2e6;
+}
+.header-logo{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.header-logo img{
+  width: 400px;
+  height: 180px;
+}
+hr {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  margin: 0;
+  width: 400px;
+  height: 1px;
+  background-color: #bfc4c7;
+  border: none;
+}
+.sign-in-modal-form {
+  display: block; 
+  
+}
+.form-checkbox-block {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.checkbox-with-item {
+  width: 390px;
+  margin-top: 0;
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+}
+.checkbox-with-item input {
+  margin-right: 0
+}
+.checkbox-with-item label {
+  color: white;
+  font-weight: bold;
+}
+.checkbox-with-item span {
+  color: #03c75a;
+  font-weight: bold;
+}
+.checkbox-text {
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+.ac-button {
+  font-weight: 700;
+  background-color: #03c75a;
+  margin: 50px 0 12px 0;
+  width: 312px;
+  height: 48px;
+  border: 1px solid #03c75a;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 1.43;
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.ac-button:disabled {
+  background-color: #bfbfbf; 
+  border-color: #bfbfbf;     
+  color: #585858;               
+  cursor: not-allowed;       
+}
